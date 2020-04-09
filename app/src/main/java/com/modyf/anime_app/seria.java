@@ -1,5 +1,6 @@
 package com.modyf.anime_app;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -7,6 +8,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -27,6 +29,8 @@ import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -99,6 +103,29 @@ public class seria extends AppCompatActivity {
 
     public static int getStringIdentifier(Context context, String name){
         return context.getResources().getIdentifier(name, "array", context.getPackageName());
+    }
+
+
+    private boolean checkIfAlreadyhavePermission() {
+        int result = ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        int result2 = ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE);
+        return result == PackageManager.PERMISSION_GRANTED && result2 == result;
+    }
+
+    private void requestForSpecificPermission() {
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}, 101);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        switch (requestCode) {
+            case 101:
+                if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                    requestForSpecificPermission();
+                }
+            default:
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
     }
 
     private void pobierz(){
@@ -278,12 +305,16 @@ public class seria extends AppCompatActivity {
             mRecyclerView.setVisibility(View.VISIBLE);
             znikaj.setVisibility(View.GONE);
         }
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         animeList = new ArrayList<>();
         setContentView(R.layout.activity_seria);
+        if (!checkIfAlreadyhavePermission()) {
+            requestForSpecificPermission();
+        }
         String fire = getIntent().getStringExtra("firebase");
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference(fire);
@@ -412,6 +443,32 @@ public class seria extends AppCompatActivity {
         return true;
     }
 
+    protected void blad() {
+        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/anime_app/" + link + ".mp4";
+        File film = new File(path);
+        if (film.exists()) {
+            film.delete();
+        }
+        showprogress(0);
+        progressDialog.dismiss();
+        AlertDialog.Builder alertDialogBuilder =
+                new AlertDialog.Builder(seria.this)
+                        .setMessage("Pobieranie przerwane. Spróbować jeszcze raz?")
+                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                showprogress(0);
+                                pobierz();
+                            }
+                        })
+                        .setNegativeButton("Nie", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                    }
+                                }
+                        );
+        alertDialogBuilder.show();
+    }
 
 private class DownloadFile extends AsyncTask<String, String, String> {
     boolean bladwystapil=false;
@@ -469,33 +526,16 @@ private class DownloadFile extends AsyncTask<String, String, String> {
         else {
             showprogress(0);
             progressDialog.dismiss();
+            AlertDialog.Builder alertDialogBuilder =
+                    new AlertDialog.Builder(seria.this)
+                            .setMessage("Pobieranie ukończone")
+                            .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            });
+            alertDialogBuilder.show();
         }
     }
 }
-    protected void blad(){
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/anime_app/" + link + ".mp4";
-        File film = new File(path);
-        if(film.exists()) {
-            film.delete();
-        }
-        showprogress(0);
-        progressDialog.dismiss();
-        AlertDialog.Builder alertDialogBuilder=
-                new AlertDialog.Builder(seria.this)
-                        .setMessage("Pobieranie przerwane. Spróbować jeszcze raz?")
-                        .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                showprogress(0);
-                                pobierz();
-                            }
-                        })
-                        .setNegativeButton("Nie", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                    }
-                                }
-                        );
-        AlertDialog alertDialog = alertDialogBuilder.show();
-    }
 }
