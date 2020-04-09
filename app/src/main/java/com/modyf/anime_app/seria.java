@@ -368,6 +368,7 @@ public class seria extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(),
                 mLayoutManager.getOrientation());
+        dividerItemDecoration.setDrawable(getApplicationContext().getResources().getDrawable(R.drawable.shape));
         mRecyclerView.addItemDecoration(dividerItemDecoration);
         mRecyclerView.setHasFixedSize(true);
         mAdapter =new ExampleAdapter(animeList);
