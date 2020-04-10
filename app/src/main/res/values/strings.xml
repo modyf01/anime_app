@@ -10,6 +10,61 @@
     <string name="c">Seria czwarta</string>
     <string name="pi">Seria piąta</string>
     <string name="sz">Seria szósta</string>
+
+
+    <string-array name="hellsing_zwykly">
+        <item>1. Nieumarły</item>
+        <item>33699739d</item>
+        <item>2. Klub M</item>
+        <item>3369730d2</item>
+        <item>3. Klub M</item>
+        <item>33696836b</item>
+        <item>4. Niewinny jako człowiek</item>
+        <item>3370003b1</item>
+        <item>5. Braterstwo</item>
+        <item>3369781c3</item>
+        <item>6. Strefa śmierci</item>
+        <item>3370048aa</item>
+        <item>7. Pojedynek</item>
+        <item>337005739</item>
+        <item>8. Zabójczy dom</item>
+        <item>3369817af</item>
+        <item>9. Czerwono różany zawrót głowy</item>
+        <item>336983270</item>
+        <item>10. Mistrz potwora</item>
+        <item>33698536f</item>
+        <item>11. Siła wyższa</item>
+        <item>336987741</item>
+        <item>12. Całkowite zniszczenie</item>
+        <item>33699040e</item>
+        <item>13. Ognie piekielne</item>
+        <item>33699251d</item>
+    </string-array>
+
+
+    <string-array name="hellsing_ultimate">
+        <item>1. Hellsing I</item>
+        <item>337021653</item>
+        <item>2. Hellsing II</item>
+        <item>33704831d</item>
+        <item>3. Hellsing III</item>
+        <item>3370489c9</item>
+        <item>4. Hellsing IV</item>
+        <item>33704925e</item>
+        <item>5. Hellsing V</item>
+        <item>3370495d6</item>
+        <item>6. Hellsing VI</item>
+        <item>3370501f5</item>
+        <item>7. Hellsing VII</item>
+        <item>337051071</item>
+        <item>8. Hellsing VIII</item>
+        <item>337075934</item>
+        <item>9. Hellsing IX</item>
+        <item>3370516e6</item>
+        <item>10. Hellsing X</item>
+        <item>337052575</item>
+    </string-array>
+
     <string-array name="fmab">
         <item>1. Stalowy Alchemik</item>
         <item>1984713d4</item>
@@ -900,6 +955,8 @@
     </string-array>
 
     <string-array name="Danmachi_2">
+        <item>0. Przeszłość i przyszłość.</item>
+        <item>36518806d</item>
         <item>1. Bankiet bogów.</item>
         <item>36770834c</item>
         <item>2. Bóg Słońca.</item>
@@ -2654,6 +2711,22 @@
         <item>45184919d</item>
         <item>121. Trzy problemy.</item>
         <item>4560833cc</item>
+        <item>122. Najczarniejsi z czarnych.</item>
+        <item>4621352ec</item>
+        <item>123. Wspomnienia Nero, część 1.</item>
+        <item>4682885d2</item>
+        <item>124. Wspomnienia Nero, część 2.</item>
+        <item>4746491d3</item>
+        <item>125. Powrót.</item>
+        <item>4791971b4</item>
+        <item>126. Wyznanie miłości Błękitnej Róży.</item>
+        <item>4837727eb</item>
+        <item>127. Trop.</item>
+        <item>488735082</item>
+        <item>128. Do Królestwa Heart!</item>
+        <item>4926097e3</item>
+        <item>129. Demon Megicula.</item>
+        <item>4967117bc</item>
     </string-array>
 
     <string-array name="blackclover_odcinki_specjalne">
@@ -3620,6 +3693,20 @@
         <item>4538264f6</item>
         <item>18. Szkolny festiwal.</item>
         <item>45928043b</item>
+        <item>19. Przygotowania do festiwalu to najfajniejsza jego część.</item>
+        <item>466289964</item>
+        <item>20. Gold Tips Imperial.</item>
+        <item>4721837ce</item>
+        <item>21. Deku versus Gentle Criminal.</item>
+        <item>4767419b6</item>
+        <item>22. Rozpoczęcie szkolnego festiwalu.</item>
+        <item>481664932</item>
+        <item>23. Dajmy się ponieść! Szkolny festiwal.</item>
+        <item>4860143c2</item>
+        <item>24. Japoński Ranking Bohaterów.</item>
+        <item>491032686</item>
+        <item>25. Jego początek.</item>
+        <item>49504846d</item>
     </string-array>
 
     <string-array name="bnha_odcinki_specjalne">
@@ -5366,6 +5453,20 @@
         <item>454221562</item>
         <item>144. Sekret Kokuriego.</item>
         <item>4598051fd</item>
+        <item>145. Ucieczka z Zamku Houzuki.</item>
+        <item>4666631ea</item>
+        <item>146. Naprzód, uciekinierzy!</item>
+        <item>472567472</item>
+        <item>147. Decydująca walka w świetle księżyca.</item>
+        <item>4771760b6</item>
+        <item>148. Nowa misja!</item>
+        <item>48209785e</item>
+        <item>149. Przyjaciele!</item>
+        <item>487265601</item>
+        <item>150. Wartość karty atutowej.</item>
+        <item>491403722</item>
+        <item>151. Boruto i Tentou.</item>
+        <item>4955807f8</item>
     </string-array>
 
     <string-array name="naruto_filmy_kinowe">
@@ -5534,6 +5635,16 @@
         <item>453537543</item>
         <item>6. Wadżra (Hardness).</item>
         <item>45873389d</item>
+        <item>7. Miażdżenie (Eighth).</item>
+        <item>4648295fc</item>
+        <item>8. Spokojny (Fragile).</item>
+        <item>4719773c6</item>
+        <item>9. Pojedynek (Heads up).</item>
+        <item>476445582</item>
+        <item>10. Stary król (Old Wang).</item>
+        <item>4810448e0</item>
+        <item>11. Przysięga krwi (Sunset Ravens).</item>
+        <item>48573530c</item>
     </string-array>
 
     <string-array name="dendrogram_1">
@@ -5549,6 +5660,18 @@
         <item>4530272b1</item>
         <item>6. Poza znak dziesiętny.</item>
         <item>4582913a2</item>
+        <item>7. Miasto Pojedynków.</item>
+        <item>4693070d1</item>
+        <item>8. Starcie wyższej klasy.</item>
+        <item>475923571</item>
+        <item>9. Początek szaleństwa.</item>
+        <item>4804928b2</item>
+        <item>10. Bitwa na planszy.</item>
+        <item>4850981dd</item>
+        <item>11. Prawa ręka zwycięzcy.</item>
+        <item>49006061e</item>
+        <item>12. Król Zniszczenia.</item>
+        <item>493666370</item>
     </string-array>
 
     <string-array name="kyokousuiri_1">
@@ -5564,6 +5687,18 @@
         <item>4540181a5</item>
         <item>6. Racjonalna fikcja.</item>
         <item>45951140e</item>
+        <item>7. Przygotowania do bitwy ze Stalową Damą.</item>
+        <item>4664546e9</item>
+        <item>8. Tkaczka fikcji.</item>
+        <item>4723925f0</item>
+        <item>9. Komisja do spraw pokonania Stalowej Damy.</item>
+        <item>477023392</item>
+        <item>10. Ścierające się fikcje.</item>
+        <item>48189986f</item>
+        <item>11. Ostateczna fikcja.</item>
+        <item>4869509e1</item>
+        <item>12. Obrończyni porządku.</item>
+        <item>491156287</item>
     </string-array>
 
     <string-array name="one_piece_1">
@@ -7411,6 +7546,16 @@
         <item>454059525</item>
         <item>922. Opowieść o rycerskości! Dwuosobowa podróż Zoro i Tonoyasu.</item>
         <item>45957681f</item>
+        <item>923. Sytuacja awaryjna! Nadchodzi Big Mama.</item>
+        <item>46646576f</item>
+        <item>924. Poruszenie w stolicy! Sanji celem kolejnego zabójcy.</item>
+        <item>48191511c</item>
+        <item>925. Na całego! Sprawiedliwa Maska Soby.</item>
+        <item>487034600</item>
+        <item>926. Desperacka sytuacja! Przerażający Oniwabanshu Orochiego.</item>
+        <item>4912411b3</item>
+        <item>927. Piekło na ziemi! Potworny wąż, szogun Orochi.</item>
+        <item>495338665</item>
     </string-array>
 
     <string-array name="one_piece_filmy_kinowe">
@@ -7522,6 +7667,20 @@
         <item>452452418</item>
         <item>6. Intuicja.</item>
         <item>45660952c</item>
+        <item>7. Pyszne było.</item>
+        <item>463407865</item>
+        <item>8. Demon z Otchłani.</item>
+        <item>4688810d2</item>
+        <item>9. Plunderer.</item>
+        <item>475622971</item>
+        <item>10. Na poważnie.</item>
+        <item>4797749e6</item>
+        <item>11. As z rękawa.</item>
+        <item>4846730af</item>
+        <item>12. Rozpoczęcie roku szkolnego.</item>
+        <item>493188183</item>
+        <item>13. Do syta.</item>
+        <item>4978733b8</item>
     </string-array>
 
     <string-array name="somali_1">
@@ -7537,6 +7696,18 @@
         <item>4531178aa</item>
         <item>6. Usychający kwiat spoglądający na ptaki.</item>
         <item>4583522a1</item>
+        <item>7. Kroki śledzące wiedźmy.</item>
+        <item>4643222e0</item>
+        <item>8. Wymodlone spotkanie i więzi.</item>
+        <item>46938777b</item>
+        <item>9. Wspomnienia zwykłych dni.</item>
+        <item>4760000d7</item>
+        <item>10. Dziecko i zielona skała.</item>
+        <item>48056961e</item>
+        <item>11. Obrońcy i napastnicy.</item>
+        <item>4851815ae</item>
+        <item>12. Więź łącząca ojca i dziecko.</item>
+        <item>49013740d</item>
     </string-array>
 
     <string-array name="drstone_1">
@@ -8626,57 +8797,6 @@
     </string-array>
 
     <string-array name="vs_1">
-        <item>1. Gdzieś, ale nie tu.</item>
-        <item>37234546d</item>
-        <item>2. Miecz.</item>
-        <item>37142264d</item>
-        <item>3. Troll.</item>
-        <item>371689303</item>
-        <item>4. Prawdziwy wojownik.</item>
-        <item>37286170f</item>
-        <item>5. Dziecko Trolla.</item>
-        <item>375223096</item>
-        <item>6. Początek podróży.</item>
-        <item>377779671</item>
-        <item>7. Normanowie.</item>
-        <item>3806548f1</item>
-        <item>8. Poza krańcem morza.</item>
-        <item>382870968</item>
-        <item>9. Walka na śmierć i życie na Moście Londyńskim.</item>
-        <item>386077628</item>
-        <item>10. Ragnarok.</item>
-        <item>3929185df</item>
-        <item>11. Wszystko na jedną kartę.</item>
-        <item>3953179e2</item>
-        <item>12. Kraina po drugiej stronie.</item>
-        <item>3989728fb</item>
-        <item>13. Dziecko bohatera.</item>
-        <item>401009587</item>
-        <item>14. Świt.</item>
-        <item>4032400c0</item>
-        <item>15. Po festiwalu przesilenia zimowego.</item>
-        <item>405893853</item>
-        <item>16. Historia bestii.</item>
-        <item>4080229ea</item>
-        <item>17. Sługa.</item>
-        <item>4112182ba</item>
-        <item>18. Poza kołyską.</item>
-        <item>416874712</item>
-        <item>19. Zjednoczony front.</item>
-        <item>419845971</item>
-        <item>20. Korona.</item>
-        <item>42263903f</item>
-        <item>21. Ponowne spotkanie.</item>
-        <item>42382289e</item>
-        <item>22. Dwa samotne wilki.</item>
-        <item>4283603c4</item>
-        <item>23. Przeliczenie.</item>
-        <item>43119717a</item>
-        <item>24. Koniec prologu.</item>
-        <item>433939487</item>
-    </string-array>
-
-    <string-array name="vs_2">
         <item>1. Gdzieś, ale nie tu.</item>
         <item>37234546d</item>
         <item>2. Miecz.</item>

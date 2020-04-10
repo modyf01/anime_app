@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         add("Naruto", getString(R.string.k), "naruto_filmy_kinowe");
         add("Naruto", getString(R.string.s), "naruto_odcinki_specjalne");
         add("Rock Lee i przyjaciele", "Seria poboczna", "rock_lee_i_przyjaciele");
-        zdj=R.drawable.naruto;
+        zdj = R.drawable.dg;
         add("Darwin's Game", getString(R.string.p), "dg_1");
         zdj=R.drawable.infinite_dendrogram;
         add("Infinite Dendrogram", getString(R.string.p), "dendrogram_1");
@@ -140,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
         add("Fairy Tail", getString(R.string.t), "fairy_tail_3");
         add("Fairy Tail", getString(R.string.k), "fairy_tail_filmy_kinowe");
         add("Fairy Tail", getString(R.string.s), "fairy_tail_odcinki_specjalne");
-        add("Fairy Tail", getString(R.string.s), "fairy_tail_odcinki_specjalne");
         zdj=R.drawable.klk;
         add("Kill la Kill", getString(R.string.p), "klk_1");
         add("Kill la Kill", "OVA", "klk_ova");
@@ -158,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
         add("No Game No Life", getString(R.string.k), "ngnl_filmy_kinowe");
         zdj=R.drawable.vs;
         add("Vinland Saga", getString(R.string.p), "vs_1");
-        add("Vinland Saga", getString(R.string.d), "vs_2");
         zdj=R.drawable.snk;
         add("Shingeki no Kyojin", getString(R.string.p), "snk_1");
         add("Shingeki no Kyojin", getString(R.string.d), "snk_2");
@@ -184,13 +182,21 @@ public class MainActivity extends AppCompatActivity {
         add("Sword Art Online: Sword Art Offline Ordinal Scale", "OVA", "swordartonline_offline_os");
         zdj=R.drawable.tate;
         add("Tate no Yuusha no Nariagari", getString(R.string.p), "tate_1");
-        zdj=R.drawable.tate;
+        zdj = R.drawable.slime;
         add("Tensei Shitara Slime Datta Ken", getString(R.string.p), "slime_1");
         add("Tensei Shitara Slime Datta Ken", getString(R.string.s), "slime_odcinki_specjalne");
-        zdj=R.drawable.tate;
-        add("Tensei Shitara Slime Datta Ken", getString(R.string.p), "slime_1");
         zdj=R.drawable.ynn;
         add("Yakusoku no Neverland", getString(R.string.p), "ynn_1");
+        zdj = R.drawable.hellsing_ultimate;
+        add("Hellsing Ultimate", getString(R.string.p), "hellsing_ultimate");
+        zdj = R.drawable.hellsing_zwykly;
+        add("Hellsing", getString(R.string.p), "hellsing_zwykly");
+
+
+
+
+
+
         setupRecyclerView();
     }
     private void add(String tytul, String opis, String fire){
@@ -211,8 +217,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(int position) {
                 String fire = animeList.get(position).getText3();
+                String tytul = animeList.get(position).getText1();
                 Intent intent = new Intent(getBaseContext(), seria.class);
                 intent.putExtra("firebase", fire);
+                intent.putExtra("tytul", tytul);
                 startActivity(intent);
             }
         });

@@ -70,7 +70,7 @@ public class seria extends AppCompatActivity {
     private LinearLayoutManager mLayoutManager;
     ArrayList<ExampleItem> animeList;
     boolean seria=true;
-    List<String> Lines;
+    List<String> Lines = new ArrayList<>();
     boolean watch=true;
     WebView strona;
     String link;
@@ -80,8 +80,10 @@ public class seria extends AppCompatActivity {
     private SimpleExoPlayer player;
     private DefaultDataSourceFactory defaultSourceFactory;
     boolean koniec=false;
+    ValueEventListener firebaselistener;
     ProgressDialog progressDialog;
     boolean czygra=false;
+    DatabaseReference myRef;
     private void zapisz(){
         if(czygra) {
             Long x = player.getCurrentPosition();
@@ -89,6 +91,12 @@ public class seria extends AppCompatActivity {
             Log.d("czas", String.valueOf(x));
             editor.commit();
         }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        myRef.removeEventListener(firebaselistener);
     }
 
     @Override
@@ -179,12 +187,9 @@ public class seria extends AppCompatActivity {
             final ProgressiveMediaSource extractorMediaSource =
                     new ProgressiveMediaSource.Factory(defaultSourceFactory).createMediaSource(Uri.parse(url));
             player.prepare(extractorMediaSource);
-            LinearLayout znikaj=findViewById(R.id.znikaj);
-            znikaj.setVisibility(View.GONE);
             final Long time = sharedPref.getLong(link, 0);
             player.seekTo(time);
             czygra = true;
-            playerView.setVisibility(View.VISIBLE);
             player.setPlayWhenReady(true);
             playerView.setBackgroundColor(Color.BLACK);
             Log.d("stronawebview", "destroy1");
@@ -219,6 +224,9 @@ public class seria extends AppCompatActivity {
                         przelacz();
                     }
                     if (player.getPlaybackState() == ExoPlayer.STATE_READY) {
+                        LinearLayout znikaj = findViewById(R.id.znikaj);
+                        znikaj.setVisibility(View.GONE);
+                        playerView.setVisibility(View.VISIBLE);
                         AudioAttributes audioAttributes = new AudioAttributes.Builder()
                                 .setUsage(C.USAGE_MEDIA)
                                 .setContentType(C.CONTENT_TYPE_MOVIE)
@@ -237,11 +245,11 @@ public class seria extends AppCompatActivity {
         final LinearLayout znikaj=findViewById(R.id.znikaj);
         if(!seria) {
             czygra = false;
-            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-            getSupportActionBar().hide();
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
             znikaj.setVisibility(View.VISIBLE);
             mRecyclerView.setVisibility(View.GONE);
+            this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            getSupportActionBar().hide();
             player = new SimpleExoPlayer.Builder(this).build();
             playerView.setPlayer(player);
             defaultSourceFactory = new DefaultDataSourceFactory(this,
@@ -315,17 +323,22 @@ public class seria extends AppCompatActivity {
         if (!checkIfAlreadyhavePermission()) {
             requestForSpecificPermission();
         }
-        String fire = getIntent().getStringExtra("firebase");
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference(fire);
-        Lines= Arrays.asList(getResources().getStringArray(getStringIdentifier(this, fire)));
         mRecyclerView = findViewById(R.id.recycleview);
-        myRef.addValueEventListener(new ValueEventListener() {
+        String fire = getIntent().getStringExtra("firebase");
+        String tytul = getIntent().getStringExtra("tytul");
+        setTitle(tytul);
+        Lines = Arrays.asList(getResources().getStringArray(getStringIdentifier(this, fire)));
+        add();
+        setupRecyclerView();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        myRef = database.getReference(fire);
+        firebaselistener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                map = (ArrayList)dataSnapshot.getValue();
+                map = (ArrayList) dataSnapshot.getValue();
                 add();
                 setupRecyclerView();
+                Log.d("aktualizacja", "teraz");
             }
 
             @Override
@@ -333,7 +346,8 @@ public class seria extends AppCompatActivity {
                 Log.w(TAG, "Failed to read value.", databaseError.toException());
 
             }
-        });
+        };
+        myRef.addValueEventListener(firebaselistener);
         sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         editor = sharedPref.edit();
         playerView = findViewById(R.id.player_view);
@@ -352,6 +366,7 @@ public class seria extends AppCompatActivity {
         this.getOnBackPressedDispatcher().addCallback(this, callback);
     }
     private void add(){
+        animeList = new ArrayList<>();
         for(int i=0; i<Lines.size(); i=i+2) {
             animeList.add(new ExampleItem(R.drawable.ic_search_black_24dp, Lines.get(i), "", Lines.get(i+1), false));
         }
@@ -362,8 +377,6 @@ public class seria extends AppCompatActivity {
         }
     }
     private void setupRecyclerView(){
-        LinearLayout znikaj = findViewById(R.id.znikaj);
-        znikaj.setVisibility(View.GONE);
         mRecyclerView.setVisibility(View.VISIBLE);
         mLayoutManager = new LinearLayoutManager(this);
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(),
@@ -471,7 +484,8 @@ public class seria extends AppCompatActivity {
         alertDialogBuilder.show();
     }
 
-private class DownloadFile extends AsyncTask<String, String, String> {
+
+    private class DownloadFile extends AsyncTask<String, String, String> {
     boolean bladwystapil=false;
     @Override
     protected String doInBackground(String... furl) {
