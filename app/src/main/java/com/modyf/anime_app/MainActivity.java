@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         animeList = new ArrayList<>();
         zdj=R.drawable.fmab;
-        add("Fullmetal Alchemist", "Brotherhood", "fmab");
+        add("Fullmetal Alchemist Brotherhood", getString(R.string.p), "fmab");
         zdj=R.drawable.btooom;
         add("Btooom!", getString(R.string.p), "btooom");
         zdj=R.drawable.campione;
@@ -209,10 +209,6 @@ public class MainActivity extends AppCompatActivity {
         add("Boku dake ga Inai Machi", getString(R.string.p), "boku_dake_ga_inai_machi");
         zdj=R.drawable.cowboy_bebop;
         add("Cowboy Bebop", getString(R.string.p), "cowboy_bebop");
-        zdj=R.drawable.shingeki_no_kyojin;
-        add("Shingeki no Kyojin", getString(R.string.p), "shingeki_no_kyojin");
-        add("Shingeki no Kyojin 2nd Season", getString(R.string.d), "shingeki_no_kyojin_2");
-        add("Shingeki no Kyojin 3rd Season", getString(R.string.t), "shingeki_no_kyojin_3");
         zdj=R.drawable.steins_gate;
         add("Steins;Gate", getString(R.string.p), "steins_gate");
         zdj=R.drawable.shigatsu_wa_kimi_no_uso;
@@ -241,6 +237,7 @@ public class MainActivity extends AppCompatActivity {
         add("Neon Genesis Evangelion", getString(R.string.p), "neon_genesis_evangelion");
         zdj=R.drawable.tokyo_ghoul;
         add("Tokyo Ghoul", getString(R.string.p), "tokyo_ghoul");
+        add("Tokyo Ghoul √A", getString(R.string.d), "tokyo_ghoul_2");
         add("Tokyo Ghoul:re", getString(R.string.t), "tokyo_ghoul_3");
         add("Tokyo Ghoul:re 2", getString(R.string.c), "tokyo_ghoul_4");
         zdj=R.drawable.durarara;
@@ -250,7 +247,46 @@ public class MainActivity extends AppCompatActivity {
         add("Durarara!!x2 Ketsu", getString(R.string.c), "durarara_4");
         zdj=R.drawable.deadman_wonderland;
         add("Deadman Wonderland", getString(R.string.p), "deadman_wonderland");
+        zdj=R.drawable.jojo_no_kimyou_na_bouken_stardust_crusaders;
+        add("JoJo no Kimyou na Bouken: Stardust Crusaders", getString(R.string.p), "jojo_no_kimyou_na_bouken_stardust_crusaders");
+        zdj=R.drawable.akame_ga_kill;
+        add("Akame ga Kill!", getString(R.string.p), "akame_ga_kill");
+        zdj=R.drawable.inuyasha;
+        add("InuYasha", getString(R.string.p), "inuyasha");
+        add("nuYasha: Kanketsu-hen", getString(R.string.d), "inuyasha_kanketsu_hen");
+        zdj=R.drawable.enn_enn_no_shouboutai;
+        add("Enn Enn no Shouboutai", getString(R.string.p), "enn_enn_no_shouboutai");
+        zdj=R.drawable.kimetsu_no_yaiba;
+        add("Kimetsu no Yaiba", getString(R.string.p), "kimetsu_no_yaiba");
+        zdj=R.drawable.bungou_stray_dogs;
+        add("Bungou Stray Dogs", getString(R.string.p), "bungou_stray_dogs");
+        add("Bungou Stray Dogs 2nd Season", getString(R.string.d), "bungou_stray_dogs_2");
+        add("Bungou Stray Dogs 3rd Season", getString(R.string.t), "bungou_stray_dogs_3");
+        zdj=R.drawable.bokutachi_wa_benkyou_ga_dekinai;
+        add("Bokutachi wa Benkyou ga Dekinai", getString(R.string.p), "bokutachi_wa_benkyou_ga_dekinai");
+        add("Bokutachi wa Benkyou ga Dekinai! 2nd Season", getString(R.string.d), "bokutachi_wa_benkyou_ga_dekinai_2nd_season");
+        zdj=R.drawable.kaguya_sama_wa_kokurasetai_tensai_tachi_no_renai_zunousen;
+        add("Kaguya-sama wa Kokurasetai: Tensai-tachi no Renai Zunousen", getString(R.string.p), "kaguya_sama_wa_kokurasetai_tensai_tachi_no_renai_zunousen");
+        zdj=R.drawable.hataraku_maou_sama;
+        add("Hataraku Maou-sama!", getString(R.string.p), "hataraku_maou_sama");
+        zdj=R.drawable.id_invaded;
+        add("ID:INVADED", getString(R.string.p), "id_invaded");
+        zdj=R.drawable.highschool_of_the_dead;
+        add("Highschool of the Dead", getString(R.string.p), "highschool_of_the_dead");
+        zdj=R.drawable.gakkou_gurashi;
+        add("Gakkou Gurashi!", getString(R.string.p), "gakkou_gurashi");
+        zdj=R.drawable.kami_sama_no_memochou;
+        add("Kami-sama no Memochou", getString(R.string.p), "kami_sama_no_memochou");
+        zdj=R.drawable.dororo;
+        add("Dororo", getString(R.string.p), "dororo");
+        zdj=R.drawable.jojo2012;
+        add("JoJo no Kimyou na Bouken (2012)", getString(R.string.p), "jojo2012");
+        zdj=R.drawable.samurai_champloo;
+        add("Samurai Champloo", getString(R.string.p), "samurai_champloo");
+        zdj=R.drawable.fruits_basket;
+        add("Fruits Basket", getString(R.string.p), "fruits_basket");
         setupRecyclerView();
+
     }
     private void add(String tytul, String opis, String fire){
         animeList.add(new ExampleItem(zdj, tytul, opis, fire, true));

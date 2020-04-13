@@ -48,6 +48,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.koushikdutta.async.future.FutureCallback;
+import com.koushikdutta.ion.Ion;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -72,7 +74,6 @@ public class seria extends AppCompatActivity {
     boolean seria=true;
     List<String> Lines = new ArrayList<>();
     boolean watch=true;
-    WebView strona;
     String link;
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
@@ -139,21 +140,34 @@ public class seria extends AppCompatActivity {
     private void pobierz(){
         Log.d("gdzie jestem", "1");
         final ConstraintLayout Layout = findViewById(R.id.parent);
-        final WebView webView = new WebView(this);
-        strona=webView;
-        webView.setVisibility(View.GONE);
-        Layout.addView(webView);
-        String newUA= "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36";
-        webView.setWebViewClient(new WebViewClient());
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setLoadsImagesAutomatically(false);
-        webView.getSettings().setUserAgentString(newUA);
-        webView.loadUrl("https://www.cda.pl/video/"+link);
-        Log.d("gdzie jestem", "2");
-        webView.setWebViewClient(new WebViewClient() {
-            boolean zyje = true;
-            @Override
-            public void onPageFinished(WebView view, String url) {
+        if(link.contains("https:/")){
+            Log.d("ladowanie", "1");
+            Ion.with(getApplicationContext()).load(link).asString().setCallback(new FutureCallback<String>() {
+                @Override
+                public void onCompleted(Exception e, String result) {
+                    result=result.substring(0, result.indexOf(".mp4")+4);
+                    result=result.substring(result.lastIndexOf("https"));
+                    showprogress(5);
+                    new DownloadFile().execute(result);
+                }
+            });
+        }
+        else {
+            final WebView webView = new WebView(this);
+            webView.setVisibility(View.GONE);
+            Layout.addView(webView);
+            String newUA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36";
+            webView.setWebViewClient(new WebViewClient());
+            webView.getSettings().setJavaScriptEnabled(true);
+            webView.getSettings().setLoadsImagesAutomatically(false);
+            webView.getSettings().setUserAgentString(newUA);
+            webView.loadUrl("https://www.cda.pl/video/" + link);
+            Log.d("gdzie jestem", "2");
+            webView.setWebViewClient(new WebViewClient() {
+                boolean zyje = true;
+
+                @Override
+                public void onPageFinished(WebView view, String url) {
                     super.onPageFinished(view, url);
                     if (url.contains("https://www.cda.pl/video/")) {
                         webView.loadUrl("javascript:(function() {" +
@@ -170,13 +184,14 @@ public class seria extends AppCompatActivity {
                         }, 1000);
                     } else {
                         Log.d("cojest", url);
-                        zyje=false;
+                        zyje = false;
                         webView.destroy();
                         showprogress(5);
                         new DownloadFile().execute(url);
                     }
-            }
-        });
+                }
+            });
+        }
     }
     public void showprogress(int a){
         progressDialog.setProgress(a);
@@ -261,46 +276,75 @@ public class seria extends AppCompatActivity {
             }
             else {
                 final ConstraintLayout Layout = findViewById(R.id.parent);
-                final WebView webView = new WebView(this);
-                strona = webView;
-                webView.setVisibility(View.GONE);
-                Layout.addView(webView);
-                String newUA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36";
-                webView.setWebViewClient(new WebViewClient());
-                webView.getSettings().setJavaScriptEnabled(true);
-                webView.getSettings().setLoadsImagesAutomatically(false);
-                webView.getSettings().setUserAgentString(newUA);
-                webView.loadUrl("https://www.cda.pl/video/" + link);
-                webView.setWebViewClient(new WebViewClient() {
-                    boolean zyje = true;
-                    @Override
-                    public void onPageFinished(WebView view, String url) {
-                        if (!seria) {
-                            super.onPageFinished(view, url);
-                            if (url.contains("https://www.cda.pl/video/")) {
-                                Log.d("cojest", "cda");
-                                webView.loadUrl("javascript:(function() {" +
-                                        "window.location.href = document.getElementsByTagName('html')[0].innerHTML.substring(document.getElementsByTagName('html')[0].innerHTML.search(\"preload=\\\"none\\\"\") + 20, document.getElementsByTagName('html')[0].innerHTML.search(\"mp4\")+3);" +
-                                        "    })();");
-                                final Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        if (zyje) {
-                                            webView.reload();
+                if(link.contains("https:/")){
+                    Log.d("ladowanie", "1");
+                    Ion.with(getApplicationContext()).load(link).asString().setCallback(new FutureCallback<String>() {
+                        @Override
+                        public void onCompleted(Exception e, String result) {
+                            result=result.substring(0, result.indexOf(".mp4")+4);
+                            result=result.substring(result.lastIndexOf("https"));
+                            przygotujfilm(result);
+                        }
+                    });
+                }
+                else {
+                    Log.d("ladowanie", "2");
+                    final WebView webView = new WebView(this);
+                    webView.setVisibility(View.GONE);
+                    Layout.addView(webView);
+                    String newUA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36";
+                    webView.setWebViewClient(new WebViewClient());
+                    webView.getSettings().setJavaScriptEnabled(true);
+                    webView.getSettings().setLoadsImagesAutomatically(false);
+                    webView.getSettings().setUserAgentString(newUA);
+                    webView.loadUrl("https://www.cda.pl/video/" + link);
+                    webView.setWebViewClient(new WebViewClient() {
+                        boolean zyje = true;
+
+                        @Override
+                        public void onPageFinished(WebView view, String url) {
+                            if (!seria) {
+                                super.onPageFinished(view, url);
+                                if (url.contains("https://www.cda.pl/video/")) {
+                                    Log.d("cojest", "cda");
+                                    webView.loadUrl("javascript:(function() {" +
+                                            "window.location.href = document.getElementsByTagName('html')[0].innerHTML.substring(document.getElementsByTagName('html')[0].innerHTML.search(\"preload=\\\"none\\\"\") + 20, document.getElementsByTagName('html')[0].innerHTML.search(\"mp4\")+3);" +
+                                            "    })();");
+                                    final Handler handler = new Handler();
+                                    handler.postDelayed(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            if (zyje) {
+                                                webView.reload();
+                                            }
                                         }
+                                    }, 1000);
+                                } else {
+                                    if (url.contains("https://www.mp4upload.com/")) {
+                                        webView.loadUrl("javascript:(function() {" +
+                                                "var a=document.getElementsByTagName('html')[0].innerHTML; var b=a.substring(0, a.indexOf(\"video.mp4\")+9);  window.location.href = b.substring(b.lastIndexOf(\"https://www4.mp4upload\"));" +
+                                                "    })();");
+                                        final Handler handler = new Handler();
+                                        handler.postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                if (zyje) {
+                                                    webView.reload();
+                                                }
+                                            }
+                                        }, 1000);
+                                    } else {
+                                        Log.d("cojest", "inna");
+                                        webView.setVisibility(View.GONE);
+                                        webView.destroy();
+                                        zyje = false;
+                                        przygotujfilm(url);
                                     }
-                                }, 1000);
-                            } else {
-                                Log.d("cojest", "inna");
-                                webView.setVisibility(View.GONE);
-                                webView.destroy();
-                                zyje = false;
-                                przygotujfilm(url);
+                                }
                             }
                         }
-                    }
-                });
+                    });
+                }
             }
         }
         else{
@@ -394,7 +438,11 @@ public class seria extends AppCompatActivity {
                 if(watch){
                 przelacz();}
                 else{
-                    String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/anime_app/"+link+".mp4";
+                    String oj=link;
+                    if(link.contains("vidlox")){
+                        oj=link.substring(17);
+                    }
+                    String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/anime_app/"+oj+".mp4";
                     final File film = new File(path);
                     if(!sharedPref.getBoolean(link+"czypobrane", false) || !film.exists()) {
                         showprogress(0);
@@ -503,7 +551,11 @@ public class seria extends AppCompatActivity {
             int lenghtOfFile = connection.getContentLength();
             Log.d("cojest", String.valueOf(lenghtOfFile));
             InputStream input = new BufferedInputStream(url.openStream(), 8192);
-            OutputStream output = new FileOutputStream(path + link+".mp4");
+            String oj=link;
+            if(link.contains("vidlox")){
+                oj=link.substring(17);
+            }
+            OutputStream output = new FileOutputStream(path + oj+".mp4");
             byte[] data = new byte[1024];
             long total = 0;
             while ((count = input.read(data)) != -1) {
