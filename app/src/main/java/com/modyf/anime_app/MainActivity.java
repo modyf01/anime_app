@@ -284,7 +284,7 @@ public class MainActivity extends AppCompatActivity {
         zdj=R.drawable.samurai_champloo;
         add("Samurai Champloo", getString(R.string.p), "samurai_champloo");
         zdj=R.drawable.fruits_basket;
-        add("Fruits Basket", getString(R.string.p), "fruits_basket");
+        add("Fruits Basket (2019)", getString(R.string.p), "fruits_basket");
         setupRecyclerView();
 
     }
