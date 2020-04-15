@@ -298,6 +298,34 @@ public class MainActivity extends AppCompatActivity {
         add("Skip Beat!", getString(R.string.p), "skip_beat");
         zdj=R.drawable.darling_in_the_franxx;
         add("Darling in the FranXX", getString(R.string.p), "darling_in_the_franxx");
+        zdj=R.drawable.kiznaiver;
+        add("Kiznaiver", getString(R.string.p), "kiznaiver");
+        zdj=R.drawable.zetsuen_no_tempest;
+        add("Zetsuen no Tempest", getString(R.string.p), "zetsuen_no_tempest");
+        zdj=R.drawable.mondaiji_tachi;
+        add("Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo?", getString(R.string.p), "mondaiji_tachi");
+        zdj=R.drawable.hai_to_gensou_no_grimgar;
+        add("Hai to Gensou no Grimgar", getString(R.string.p), "hai_to_gensou_no_grimgar");
+        zdj=R.drawable.devilman_crybaby;
+        add("Devilman: Crybaby", getString(R.string.p), "devilman_crybaby");
+        zdj=R.drawable.overlord;
+        add("Overlord", getString(R.string.p), "overlord");
+        add("Overlord II", getString(R.string.d), "overlord_2");
+        add("Overlord III", getString(R.string.t), "overlord_3");
+        zdj=R.drawable.quanzhi_gaoshou;
+        add("Quanzhi Gaoshou", getString(R.string.p), "quanzhi_gaoshou");
+        zdj=R.drawable.sukasuka;
+        add("Shuumatsu Nani Shitemasu ka? Isogashii desu ka? Sukutte Moratte Ii desu ka? SukaSuka", getString(R.string.p), "sukasuka");
+        zdj=R.drawable.zankyou_no_terror;
+        add("Zankyou no Terror", getString(R.string.p), "zankyou_no_terror");
+        zdj=R.drawable.trinity_seven;
+        add("Trinity Seven", getString(R.string.p), "trinity_seven");
+        zdj=R.drawable.mayo_chiki;
+        add("Mayo Chiki!", getString(R.string.p), "mayo_chiki");
+        zdj=R.drawable.dakara_boku_wa_h_ga_dekinai;
+        add("Dakara Boku wa, H ga Dekinai.", getString(R.string.p), "dakara_boku_wa_h_ga_dekinai");
+        zdj=R.drawable.monster_musume_no_iru_nichijou;
+        add("Monster Musume no Iru Nichijou", getString(R.string.p), "monster_musume_no_iru_nichijou");
         setupRecyclerView();
     }
     private void add(String tytul, String opis, String fire){

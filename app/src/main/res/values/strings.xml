@@ -12808,4 +12808,438 @@
         <item>24. Nigdy nie pozwól mi odejść</item>
         <item>418051950</item>
     </string-array>
+
+
+
+
+    <string-array name="kiznaiver">
+        <item>1. Czasem więź powstaje przy pierwszym spotkaniu spojrzeń.</item>
+        <item>3164453b1</item>
+        <item>2. Jeśli z taką łatwością możesz przełknąć tak szaloną sytuację jak ta, to dwa wiadra baru nie powinny sprawić problemu</item>
+        <item>316445927</item>
+        <item>3. Choćby nie wiem jak tragiczna była sytuacja, damy radę coś wykombinować, jeśli spojrzymy na to z innej strony, co nie?</item>
+        <item>31644656b</item>
+        <item>4. Teraz jak już jesteśmy połączeni, poznajmy się wszyscy lepiej, okej?</item>
+        <item>3164483d8</item>
+        <item>5. Super, mamy obóz! Czas na wdeptywanie w jelenie kupy i walki na poduszki!</item>
+        <item>316448644</item>
+        <item>6. Jeszcze nic dobrego nie wynikło z przebywania z wami.</item>
+        <item>316451669</item>
+        <item>7. Zaczyna się bitwa o osiągnięcie prawdy o siedmiokrotności jednej siódmej bólu !</item>
+        <item>31645222d</item>
+        <item>8. Szczęśliwe chwile zwykle nie trwają zbyt długo</item>
+        <item>31645493f</item>
+        <item>9. To koniec .... Tak sądzę</item>
+        <item>316455591</item>
+        <item>10. Jak długo Ci trzeba powtarzać, że Twoja miłość pewnie będzie nieodwzajemniona ?</item>
+        <item>31645766e</item>
+        <item>11. Musimy do siebie dzwonić z każdego błahego powodu, by zapewnić o swoich uczuciach. W końcu od tego są przyjaciele !</item>
+        <item>316458577</item>
+        <item>12. Gdyby system kizna rozprzestrzenił się na całym świecie</item>
+        <item>316460365</item>
+    </string-array>
+
+
+    <string-array name="zetsuen_no_tempest">
+        <item>1. Mag w beczce.</item>
+        <item>306033678</item>
+        <item>2. Powiedział, że była bardzo ładna.</item>
+        <item>30603396c</item>
+        <item>3. Są rzeczy, na które nawet magia nie ma wpływu.</item>
+        <item>30603426a</item>
+        <item>4. Przeklęta para.</item>
+        <item>3060345f8</item>
+        <item>5. Wszystko ma swój powód.</item>
+        <item>3060348b6</item>
+        <item>6. Paradoks Czaszki</item>
+        <item>3060351b8</item>
+        <item>7. Pierwszy Pocałunek</item>
+        <item>306035441</item>
+        <item>8. Pora Pozbyć Się Księżniczki</item>
+        <item>306035753</item>
+        <item>9. Chłopak</item>
+        <item>306036316</item>
+        <item>10. Jak Zbudować Wehikuł Czasu</item>
+        <item>3060366d3</item>
+        <item>11. Córka Czasu</item>
+        <item>30603692c</item>
+        <item>12. Wyrzeknij się na chwilę Zbawienia</item>
+        <item>3060372c0</item>
+        <item>13. Powód do marzeń</item>
+        <item>306037559</item>
+        <item>14. Szczęśliwego Nowego Roku</item>
+        <item>30603781a</item>
+        <item>15. Chyba coś knujesz</item>
+        <item>306038188</item>
+        <item>16. Wędrowne widmo</item>
+        <item>3060384cd</item>
+        <item>17. Morski Śnieg</item>
+        <item>3060387e3</item>
+        <item>18. Tańcząca Księżniczka</item>
+        <item>30603902d</item>
+        <item>19. Obiekt pożądania</item>
+        <item>306039353</item>
+        <item>20. Kto to zrobił?</item>
+        <item>30603965c</item>
+        <item>21. Femme Fatale</item>
+        <item>3060399fa</item>
+        <item>22. Fuwa Aika</item>
+        <item>3060405ef</item>
+        <item>23. Bitwa Rodzaju</item>
+        <item>3060408b6</item>
+        <item>24. Ich własna historia</item>
+        <item>3060411b3</item>
+    </string-array>
+
+    <string-array name="mondaiji_tachi">
+        <item>1. Trudne dzieci pochodzą z innego świata, czyż nie?</item>
+        <item>364819339</item>
+        <item>2. Wygląda na to, że ta loli w japońskim ubiorze jest dość narwana, prawda?</item>
+        <item>3648220c4</item>
+        <item>3. Wygląda na to, że w kąpieli będziemy robili to i tamto, prawda?</item>
+        <item>3648223be</item>
+        <item>4. Chyba jakiś zbok dybie na Czarnego Królika, prawda?</item>
+        <item>3648226a7</item>
+        <item>5. Wygląda na to, że obietnica jest po drugiej stronie gwiazdy, prawda?</item>
+        <item>36482327b</item>
+        <item>6. Wygląda na to, że trudne dzieci będą brały udział w festiwalu, prawda?</item>
+        <item>364823515</item>
+        <item>7. Wygląda na to, że Asuka zostanie wycmokana w ciemnościach, prawda?</item>
+        <item>364823891</item>
+        <item>8. Wygląda na to, z dźwiękiem fletu nadejdzie Wielka Katastrofa.</item>
+        <item>364824168</item>
+        <item>9. Wygląda na to, że zwiastujący kataklizm zapach śmierci rozchodzi się po mieście, prawda?</item>
+        <item>36482448f</item>
+        <item>10. Wygląda na to, że trudne dzieci wyjaśniają całą sytuację, prawda?</item>
+        <item>364824745</item>
+    </string-array>
+
+    <string-array name="hai_to_gensou_no_grimgar">
+        <item>1. Szept, śpiew, modlitwa, przebudzenie</item>
+        <item>27261861b</item>
+        <item>2. Długi dzień Rekrutów Ochotniczych Żołnierzy</item>
+        <item>272619882</item>
+        <item>3. Czy sakiewki Goblinów są wypełnione Naszymi Marzeniami?</item>
+        <item>272620161</item>
+        <item>4. Niebo Tańczące z Pyłem</item>
+        <item>27262103d</item>
+        <item>5. Płacz nie oznacza, że jesteś Słaby. Cierpienie nie oznacza, że jesteś Silny.</item>
+        <item>27262163c</item>
+        <item>6. Jej okoliczności</item>
+        <item>2726219bd</item>
+        <item>7. Mówili na Nich Zabójcy Goblinów</item>
+        <item>27262226c</item>
+        <item>8. W moich wspomnieniach z tobą</item>
+        <item>2726225b1</item>
+        <item>9. Jak odpocząć ?</item>
+        <item>27262283a</item>
+        <item>10. Ja nie pasuje aby być liderem</item>
+        <item>272623492</item>
+        <item>11. Pomiędzy życiem i śmiercią</item>
+        <item>2726237dd</item>
+        <item>12. Do jutra</item>
+        <item>27262401a</item>
+    </string-array>
+
+    <string-array name="devilman_crybaby">
+        <item>1. Potrzebuje Cię</item>
+        <item>3364301ff</item>
+        <item>2. Jedna ręka wystarczy</item>
+        <item>33642702e</item>
+        <item>3. Uwierz Mi!</item>
+        <item>3364273ce</item>
+        <item>4. Odwagi</item>
+        <item>33642790a</item>
+        <item>5. Piękna Silene</item>
+        <item>336428264</item>
+        <item>6. Ani Demon, Ani Człowiek</item>
+        <item>336428559</item>
+        <item>7. Słabi ludzie, mądre demony</item>
+        <item>3364288e6</item>
+        <item>8. Muszę się dowiedzieć</item>
+        <item>33642912c</item>
+        <item>9. Idźcie do diabła, śmiertelni!</item>
+        <item>3364294a1</item>
+        <item>10. Beksa</item>
+        <item>336429768</item>
+    </string-array>
+
+    <string-array name="overlord">
+        <item>1. Koniec i początek</item>
+        <item>453131325</item>
+        <item>2. Hierarchia opiekuna</item>
+        <item>4531424f3</item>
+        <item>3. Bitwa w miejscowości Carne</item>
+        <item>453133426</item>
+        <item>4. Władca śmierci</item>
+        <item>453360532</item>
+        <item>5. Dwóch poszukiwaczy przygód</item>
+        <item>453388496</item>
+        <item>6. Podróż</item>
+        <item>453419010</item>
+        <item>7. Mądry Król Lasu</item>
+        <item>453452007</item>
+        <item>8. Bliźniacze Miecze Tnącej Śmierć</item>
+        <item>4534793b6</item>
+        <item>9. Mroczny Wojownik</item>
+        <item>453504511</item>
+        <item>10. Prawdziwy wampir</item>
+        <item>4535282dd</item>
+        <item>11. Zamieszanie i zrozumienie</item>
+        <item>4535912b4</item>
+        <item>12. Krwawa Valkiria</item>
+        <item>453594274</item>
+        <item>13. Gracz vs Bohater niezależny</item>
+        <item>45359782e</item>
+    </string-array>
+
+    <string-array name="overlord_2">
+        <item>1. Jutrzenka Rozpaczy</item>
+        <item>47480516d</item>
+        <item>2. Odejście</item>
+        <item>474805430</item>
+        <item>3. Zgromadzenie Jaszczuro-ludzi</item>
+        <item>4748057b4</item>
+        <item>4. Armia Śmierci</item>
+        <item>3939217a5</item>
+        <item>5. Zamrażający bóg</item>
+        <item>393922026</item>
+        <item>6. Ci Którzy Podnoszą, Ci Którzy Są Podnoszeni</item>
+        <item>393928329</item>
+        <item>7. Niebieskie Róże</item>
+        <item>3939286b5</item>
+        <item>8. Uczucie chłopca</item>
+        <item>3939289c6</item>
+        <item>9. Strzeliste iskry ognia</item>
+        <item>393929231</item>
+        <item>10. Niepokoje zaczynają się w królewskiej stolicy</item>
+        <item>393929520</item>
+        <item>11. Pośpiech</item>
+        <item>393929898</item>
+        <item>12. Ostatnia bitwa zakłócenia</item>
+        <item>393930120</item>
+        <item>13. Ostateczna karta atutowa</item>
+        <item>3939304e2</item>
+    </string-array>
+
+    <string-array name="overlord_3">
+        <item>1. Melancholia Władcy</item>
+        <item>3942166a5</item>
+        <item>2. Wioska Carne Ponownie</item>
+        <item>39421690a</item>
+        <item>3. Zamieszanie i Szaleńcze Dni Enri</item>
+        <item>394217229</item>
+        <item>4. Gigant Wschodu, Diabelny Wąż Zachodu</item>
+        <item>3942178e1</item>
+        <item>5. Dwóch Liderów</item>
+        <item>394237623</item>
+        <item>6. Zaproszenie na śmierć</item>
+        <item>3942379c9</item>
+        <item>7. Motyl Uwikłany w Pajęczą Sieć</item>
+        <item>39423827e</item>
+        <item>8. Garść Nadziei</item>
+        <item>394238520</item>
+        <item>9. Wojna Słów</item>
+        <item>3942388c8</item>
+        <item>10. Przygotowanie do wojny</item>
+        <item>394239102</item>
+        <item>11. Kolejna Bitwa</item>
+        <item>3942394fe</item>
+        <item>12. Masakra</item>
+        <item>394239748</item>
+        <item>13. Gracz vs Gracz</item>
+        <item>3942400b6</item>
+    </string-array>
+
+    <string-array name="quanzhi_gaoshou">
+        <item>1. Ye Qiu? Ye Xiu?</item>
+        <item>147200095</item>
+        <item>2. Uzdolniony Nadzorca</item>
+        <item>147272920</item>
+        <item>3. Poszukiwacze przygód są zawsze wolni</item>
+        <item>147273055</item>
+        <item>4. Dzikie Bossy Są Przeznaczone do Kradzieży!</item>
+        <item>1472731fb</item>
+        <item>5. Gra Dla Jednego Gracza?</item>
+        <item>147273374</item>
+        <item>6. Mistrz Ostrza</item>
+        <item>147273432</item>
+        <item>7. Najwspanialszy BOSS w Historii</item>
+        <item>1472735f4</item>
+        <item>8. Chłopaki, Spotkajmy Się!</item>
+        <item>147273718</item>
+        <item>9. Wróg Publiczny</item>
+        <item>1455308ad</item>
+        <item>10. Strategia mistrza taktyków</item>
+        <item>14727446c</item>
+        <item>11. Używanie odpowiedniej metody do powiedzenia tobie tego, co uważanie jest za brutalne</item>
+        <item>14727393c</item>
+        <item>12. 10 Lat Glory, i To Trwa</item>
+        <item>1491651bf</item>
+    </string-array>
+
+    <string-array name="sukasuka">
+        <item>1. Zniszczony Chronograf</item>
+        <item>3648154e9</item>
+        <item>2. Nocne sny późnej jesieni</item>
+        <item>36481574f</item>
+        <item>3. Gwieździsta droga ku jutru</item>
+        <item>364816058</item>
+        <item>4. Kości w puli</item>
+        <item>36481634a</item>
+        <item>5. Od świtu do zmierzchu</item>
+        <item>3648166b4</item>
+        <item>6. Żadne wieści nie były dobrymi wieściami</item>
+        <item>3648172e1</item>
+        <item>7. Nie ma to jak w domu</item>
+        <item>364819671</item>
+        <item>8. Niewielkie światło, niewielka nadzieja</item>
+        <item>36481992f</item>
+        <item>9. Magia Księżyca</item>
+        <item>3648202e7</item>
+        <item>10. Moje Szczęście</item>
+        <item>3648205a1</item>
+        <item>11. Dowód Istnienia</item>
+        <item>364821458</item>
+        <item>12. Chtholly</item>
+        <item>364821760</item>
+    </string-array>
+
+
+
+
+<string-array name="zankyou_no_terror">
+<item>1. Upadek</item>
+<item>20975707e</item>
+<item>2. Wołanie i Odpowiedź</item>
+<item>209762181</item>
+<item>3. Znajdź i zniszcz</item>
+<item>209768170</item>
+<item>4. Przełom</item>
+<item>209773243</item>
+<item>5. Zabawa w chowanego</item>
+<item>2097807f3</item>
+<item>6. Gotowi czy nie</item>
+<item>209786712</item>
+<item>7. Równowaga</item>
+<item>209796037</item>
+<item>8. Moja prawdziwa dama</item>
+<item>2097978ce</item>
+<item>9. Wzloty i upadki</item>
+<item>2097993fb</item>
+<item>10. Helter Skelter</item>
+<item>2098044f0</item>
+<item>11. Von - Nadzieja</item>
+<item>209808965</item>
+</string-array>
+
+<string-array name="trinity_seven">
+<item>1. Zarządzanie i selekcja</item>
+<item>3339508f1</item>
+<item>2. Więzienny zamek i ochrona grymuaru</item>
+<item>33395531e</item>
+<item>3. Mag i Alchemik</item>
+<item>3339556d5</item>
+<item>4. Labirynt i Magiczny Strzelec</item>
+<item>3339562e7</item>
+<item>5. Świat snów i minister sabatu</item>
+<item>3339565d1</item>
+<item>6. Mroczny Mag i Wielkie Wydarzenie</item>
+<item>333956878</item>
+<item>7. Zagubiona Technika i Rozwiązany Problem</item>
+<item>3339571ea</item>
+<item>8. Nauka i wakacje</item>
+<item>33395806d</item>
+<item>9. Biblijna Walka i Słodkie Wspomnienia</item>
+<item>3339583df</item>
+<item>10. Mistrz Gry i Niewolnik Szatana</item>
+<item>3339589b6</item>
+<item>11. Rycerze Fianny i Siostrzyczki</item>
+<item>333959265</item>
+<item>12. Dziewczyna z Kryminału i Jego Świat</item>
+<item>3339595f1</item>
+</string-array>
+
+<string-array name="mayo_chiki">
+<item>1. Koniec świata</item>
+<item>149259524</item>
+<item>2. Zakochałam się po uszy!</item>
+<item>1492597e6</item>
+<item>3. To bez wątpliwości jest w łóżku</item>
+<item>14925985d</item>
+<item>4. Nie gap się tak na mnie...</item>
+<item>149259971</item>
+<item>5. Bądź moim chłopakiem!</item>
+<item>14926026d</item>
+<item>6. Zacznijmy wojnę!</item>
+<item>1492606a0</item>
+<item>7. Ucieknijmy!</item>
+<item>1492604c0</item>
+<item>8. Mój pierwszy raz!</item>
+<item>149260843</item>
+<item>9. Pójdę na wyprawę na jakiś czas</item>
+<item>149545246</item>
+<item>10. Jedzmy!</item>
+<item>149545487</item>
+<item>11. Nyu!</item>
+<item>149545550</item>
+<item>12. Niepewność kamerdynera i ja - żóltodziób</item>
+<item>14954563f</item>
+<item>13. Proszę, popieść je!</item>
+<item>14954583a</item>
+</string-array>
+
+<string-array name="dakara_boku_wa_h_ga_dekinai">
+<item>1. Czerwona nić przeznaczenia!?</item>
+<item>374552594</item>
+<item>2. Erotyzm jest dobry dla oczu</item>
+<item>37455281c</item>
+<item>3. Niebezpieczna Idolka</item>
+<item>374553103</item>
+<item>4. Szczelina między dużymi i małymi piersiami</item>
+<item>374550126</item>
+<item>5. Niewidzialny słownik</item>
+<item>374553780</item>
+<item>6. Razem jako jedno</item>
+<item>37455408c</item>
+<item>7. Chcę Ci pozwolić</item>
+<item>374549579</item>
+<item>8. Więzi rywalek</item>
+<item>37455072f</item>
+<item>9. Powstanie królestwa</item>
+<item>374551658</item>
+<item>10. Niebo po piekle</item>
+<item>374554326</item>
+<item>11. Miłość staje się prawdą</item>
+<item>3745546d1</item>
+<item>12. Przestań mówić o seksie</item>
+<item>374549299</item>
+</string-array>
+
+<string-array name="monster_musume_no_iru_nichijou">
+<item>1. Codzienne życie z Lamią</item>
+<item>13822986b</item>
+<item>2. Codzienne życie z Harpią i Centaurem</item>
+<item>138229907</item>
+<item>3. Codzienne życie z niebezpiecznymi okolicznościami</item>
+<item>13823010c</item>
+<item>4. Codzienne życie ze Slimem</item>
+<item>138230436</item>
+<item>5. Codzienne życie z Syreną</item>
+<item>138230741</item>
+<item>6. Codzienne życie z linieniem i składaniem jaj</item>
+<item>138230834</item>
+<item>7. Codzienne życie z MON i Arachne</item>
+<item>13823135b</item>
+<item>8. Codzienne życie ze słabym zdrowiem</item>
+<item>1382316e7</item>
+<item>9. Codzienne życie z pogróżkami</item>
+<item>1384974e8</item>
+<item>10. Codzienne życie z D</item>
+<item>1384975cf</item>
+<item>11. Codzienne życie z Dullahanem</item>
+<item>138497838</item>
+<item>12. Codzienne życie z potworzycami</item>
+<item>1384980f5</item>
+</string-array>
 </resources>
