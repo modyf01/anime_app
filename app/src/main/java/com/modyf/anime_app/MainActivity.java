@@ -158,14 +158,14 @@ public class MainActivity extends AppCompatActivity {
         zdj=R.drawable.vs;
         add("Vinland Saga", getString(R.string.p), "vs_1");
         zdj=R.drawable.snk;
-        add("Shingeki no Kyojin", getString(R.string.p), "snk_1");
-        add("Shingeki no Kyojin", getString(R.string.d), "snk_2");
-        add("Shingeki no Kyojin", getString(R.string.t), "snk_3");
-        add("Shingeki no Kyojin", "teatrzyk obrazkowy", "snk_teatrzyk");
-        add("Shingeki no Kyojin", getString(R.string.k), "snk_filmy_kinowe");
-        add("Shingeki! Kyojin Chuugakkou", "Seria poboczna", "snk_gimnazjum_tytanow");
-        add("Shingeki no Kyojin: Kuinaki Sentaku", "Seria poboczna", "snk_bez_zalu");
-        add("Shingeki no Kyojin", "OVA", "snk_ova");
+        add("Shingeki no Kyojin - Attack on Titan ", getString(R.string.p), "snk_1");
+        add("Shingeki no Kyojin - Attack on Titan ", getString(R.string.d), "snk_2");
+        add("Shingeki no Kyojin - Attack on Titan ", getString(R.string.t), "snk_3");
+        add("Shingeki no Kyojin - Attack on Titan ", "teatrzyk obrazkowy", "snk_teatrzyk");
+        add("Shingeki no Kyojin - Attack on Titan ", getString(R.string.k), "snk_filmy_kinowe");
+        add("Shingeki! Kyojin Chuugakkou - Attack on Titan", "Seria poboczna", "snk_gimnazjum_tytanow");
+        add("Shingeki no Kyojin - Attack on Titan : Kuinaki Sentaku", "Seria poboczna", "snk_bez_zalu");
+        add("Shingeki no Kyojin - Attack on Titan ", "OVA", "snk_ova");
         zdj=R.drawable.sng;
         add("Suisei no Gargantia", getString(R.string.p), "sng_1");
         add("Suisei no Gargantia", "OVA", "sng_ova");
@@ -285,8 +285,20 @@ public class MainActivity extends AppCompatActivity {
         add("Samurai Champloo", getString(R.string.p), "samurai_champloo");
         zdj=R.drawable.fruits_basket;
         add("Fruits Basket (2019)", getString(R.string.p), "fruits_basket");
+        zdj=R.drawable.soul_eater;
+        add("Soul Eater", getString(R.string.p), "soul_eater");
+        zdj=R.drawable.soul_eater_not;
+        add("Soul Eater NOT!", getString(R.string.sb), "soul_eater_not");
+        zdj=R.drawable.mob_psycho_100;
+        add("Mob i Reigen", getString(R.string.p), "mob_psycho_100");
+        zdj=R.drawable.relife;
+        add("ReLIFE", getString(R.string.p), "relife");
+        add("ReLIFE Kanketsu-hen", getString(R.string.d), "relife_2");
+        zdj=R.drawable.skip_beat;
+        add("Skip Beat!", getString(R.string.p), "skip_beat");
+        zdj=R.drawable.darling_in_the_franxx;
+        add("Darling in the FranXX", getString(R.string.p), "darling_in_the_franxx");
         setupRecyclerView();
-
     }
     private void add(String tytul, String opis, String fire){
         animeList.add(new ExampleItem(zdj, tytul, opis, fire, true));
