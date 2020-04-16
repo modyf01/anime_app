@@ -326,6 +326,14 @@ public class MainActivity extends AppCompatActivity {
         add("Dakara Boku wa, H ga Dekinai.", getString(R.string.p), "dakara_boku_wa_h_ga_dekinai");
         zdj=R.drawable.monster_musume_no_iru_nichijou;
         add("Monster Musume no Iru Nichijou", getString(R.string.p), "monster_musume_no_iru_nichijou");
+        zdj=R.drawable.kimi_no_na_wa;
+        add("Kimi no Na wa.", getString(R.string.p), "kiminonawa");
+        zdj=R.drawable.banana_fish;
+        add("Banana Fish", getString(R.string.p), "banana_fish");
+        zdj=R.drawable.koe_no_katachi;
+        add("Koe no Katachi", getString(R.string.p), "koe_no_katachi");
+        zdj=R.drawable.violet_evergarden;
+        add("Violet Evergarden", getString(R.string.p), "violet_evergarden");
         setupRecyclerView();
     }
     private void add(String tytul, String opis, String fire){

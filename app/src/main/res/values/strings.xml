@@ -11,6 +11,16 @@
     <string name="pi">Seria piąta</string>
     <string name="sz">Seria szósta</string>
 
+    <string-array name="kiminonawa">
+        <item>Kimi no Na wa.</item>
+        <item>359876520</item>
+    </string-array>
+
+    <string-array name="koe_no_katachi">
+        <item>Koe no Katachi</item>
+        <item>43131539a</item>
+    </string-array>
+
 
     <string-array name="hellsing_zwykly">
         <item>1. Nieumarły</item>
@@ -13242,4 +13252,84 @@
 <item>12. Codzienne życie z potworzycami</item>
 <item>1384980f5</item>
 </string-array>
+
+    <string-array name="violet_evergarden">
+        <item>1. "Kocham Cię" i Auto Memory Dolls</item>
+        <item>4070047a4</item>
+        <item>2. Nigdy Nie Wróci</item>
+        <item>4070053bd</item>
+        <item>3. Możesz być przykładową Auto Memory Doll</item>
+        <item>407005647</item>
+        <item>4. Nie będziesz narzędziem, lecz osobą godną tego imienia</item>
+        <item>407005996</item>
+        <item>5. Piszesz listy, które łączą ludzi?</item>
+        <item>4070062ce</item>
+        <item>6. Gdzieś, pod gwiaździstym niebem.</item>
+        <item>4070080f8</item>
+        <item>7. "　　　　　"</item>
+        <item>40700839b</item>
+        <item>8. </item>
+        <item>407008619</item>
+        <item>9. Violet Evergarden</item>
+        <item>4070092eb</item>
+        <item>10. Ukochani zawsze będą nad tobą czuwać</item>
+        <item>40700950d</item>
+        <item>11. Nie chcę aby ktokolwiek umierał</item>
+        <item>40699905e</item>
+        <item>12. </item>
+        <item>406999369</item>
+        <item>13. Auto Memory Doll i "Kocham Cię"</item>
+        <item>4069999dd</item>
+    </string-array>
+
+    <string-array name="banana_fish">
+        <item>1. Idealny dzień na BananaFish</item>
+        <item>3601126aa</item>
+        <item>2. W obcym kraju</item>
+        <item>36011536c</item>
+        <item>3. Przez rzekę i do drzew</item>
+        <item>3601168cb</item>
+        <item>4. Ta strona raju</item>
+        <item>360117433</item>
+        <item>5. Od śmierci do poranka</item>
+        <item>36011869e</item>
+        <item>6. Moje zaginione miasto</item>
+        <item>360118954</item>
+        <item>7. Bogaty chłopak</item>
+        <item>3601192b4</item>
+        <item>8. Banalna opowieść</item>
+        <item>360119554</item>
+        <item>9. Oszczędź mi walca</item>
+        <item>360167211</item>
+        <item>10. Babilon odwiedzony ponownie</item>
+        <item>3601687eb</item>
+        <item>11. Piękny i diabelski</item>
+        <item>36017269e</item>
+        <item>12. Mieć i nie mieć</item>
+        <item>3601729f6</item>
+        <item>13. Śnieg Kilimandżaro</item>
+        <item>3601735bc</item>
+        <item>14. Czuła jest Noc</item>
+        <item>360340991</item>
+        <item>15. Ogród Edenu</item>
+        <item>360337628</item>
+        <item>16. Lo, biedny paw</item>
+        <item>360339713</item>
+        <item>17. Zabójcy</item>
+        <item>360340070</item>
+        <item>18. Wyspy w Strumieniu</item>
+        <item>36034030b</item>
+        <item>19. Lodowy Pałac</item>
+        <item>3603406e4</item>
+        <item>20. Ludzie, którzy nie godzą się na zniewolenie</item>
+        <item>36036706b</item>
+        <item>21. Osoba, której nie da się pokonać</item>
+        <item>360367350</item>
+        <item>22. Będąc na łożu śmierci</item>
+        <item>36036763f</item>
+        <item>23. Komu bije dzwon</item>
+        <item>3603679ab</item>
+        <item>24. Buszujący w zbożu</item>
+        <item>360368210</item>
+    </string-array>
 </resources>
